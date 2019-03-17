@@ -22,8 +22,7 @@ const envParams = [
   'HEROKU_TEST_RUN_BRANCH',
   'WEB_CONCURRENCY',
   'WEB_MEMORY',
-  'MEMORY_AVAILABLE',
-  'EXIFTOOL_PATH'
+  'MEMORY_AVAILABLE'
 ];
 
 const testLogger = logger.clone({level: 'info'});
