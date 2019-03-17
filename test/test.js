@@ -26,10 +26,12 @@ const envParams = [
   'EXIFTOOL_PATH'
 ];
 
-logger.info(`npm_config_user_agent: ${process.env.npm_config_user_agent}`);
+const testLogger = logger.clone({level: 'info'});
+
+testLogger.info(`npm_config_user_agent: ${process.env.npm_config_user_agent}`);
 
 envParams.forEach((item) => {
-  logger.info(`${item}: ${process.env[item.toString()] || 'n/a'} `);
+  testLogger.info(`${item}: ${process.env[item.toString()] || 'n/a'} `);
 });
 
 describe('When the page loads', () => {
