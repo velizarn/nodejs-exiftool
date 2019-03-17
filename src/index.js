@@ -51,7 +51,7 @@ function startMaster() {
 
 function startWorker(workerId) {
 
-  const ep = new exiftool.ExiftoolProcess('exiftool');
+  const ep = new exiftool.ExiftoolProcess(EXIFTOOL_PATH || 'exiftool');
 
   const app = express();
 
