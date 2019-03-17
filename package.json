@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "heroku-prebuild": "vendor/exiftool/install",
+    "heroku-prebuild": "./vendor/exiftool/install",
     "heroku-postbuild": "echo This runs afterwards.",
     "lint": "eslint --ext .js,.json,.jsx . --fix",
     "start": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 src/index.js",
