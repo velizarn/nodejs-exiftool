@@ -1,0 +1,8 @@
+v=11.32
+cd $HOME/vendor/exiftool/
+gzip -dc Image-ExifTool-$v.tar.gz | tar -xf -
+cd Image-ExifTool-$v
+dir=$(pwd)
+perl Makefile.PL
+make test
+echo "export EXIFTOOL_PATH=$dir/exiftool" > $HOME/.profile
