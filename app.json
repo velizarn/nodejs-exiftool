@@ -1,0 +1,52 @@
+{
+  "name": "nodejs-exiftool",
+  "description": "Node.js integration for Phil Harvey's ExifTool",
+  "repository": "https://github.com/velizarn/nodejs-exiftool.git",
+  "logo": "https://cdn.jsdelivr.net/gh/heroku/node-js-getting-started@master/public/node.svg",
+  "keywords": [
+    "node",
+    "heroku-pipeline",
+    "heroku",
+    "exiftool",
+    "exif"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ci-redis"
+    }
+  ],
+  "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free",
+      "command": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 src/index.js"
+    }
+  },
+  "addons": [
+    "heroku-redis:hobby-dev",
+    "scheduler:standard"
+  ],
+  "stack": "heroku-18",
+  "env": {},
+  "environments": {
+    "test": {
+      "formation": {
+        "test": {
+          "quantity": 1,
+          "size": "standard-1x"
+        }
+      },
+      "env": {},
+      "scripts": {
+        "test-setup": "npm run lint"
+      },
+      "addons":[
+        "heroku-redis:in-dyno"
+      ]
+    }
+  }
+}
