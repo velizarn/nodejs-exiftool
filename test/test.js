@@ -28,6 +28,7 @@ const envParams = [
 
 const testLogger = logger.clone({level: 'info'});
 
+testLogger.info(`PATH: ${process.env.PATH}`);
 testLogger.info(`npm_config_user_agent: ${process.env.npm_config_user_agent}`);
 
 envParams.forEach((item) => {
