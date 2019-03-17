@@ -16,6 +16,9 @@
     },
     {
       "url": "heroku/ci-redis"
+    },
+    {
+      "url": "https://github.com/giddyio/heroku-buildpack-multi.git"
     }
   ],
   "success_url": "/",

@@ -22,8 +22,7 @@ const envParams = [
   'HEROKU_TEST_RUN_BRANCH',
   'WEB_CONCURRENCY',
   'WEB_MEMORY',
-  'MEMORY_AVAILABLE',
-  'EXIFTOOL_PATH'
+  'MEMORY_AVAILABLE'
 ];
 
 const testLogger = logger.clone({level: 'info'});
@@ -73,6 +72,7 @@ describe('When the page loads', () => {
   });
 });
 
+/*
 describe('When test exiftool', () => {
   it('it should respond with a 200, response should be an Object and should have property FileName', (done) => {
     chai.request(server)
@@ -88,6 +88,7 @@ describe('When test exiftool', () => {
       });
   });
 });
+*/
 
 describe('If you try to access a non-existing page', () => {
   it('it should show status 404', (done) => {
