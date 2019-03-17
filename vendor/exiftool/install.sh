@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # cd $HOME/vendor/exiftool/
 # gzip -dc Image-ExifTool-11.32.tar.gz | tar -xf -
 # cd Image-ExifTool-11.32
