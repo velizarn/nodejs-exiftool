@@ -18,7 +18,7 @@
       "url": "heroku/ci-redis"
     },
     {
-      "url": "https://github.com/giddyio/heroku-buildpack-multi.git"
+      "url": "https://github.com/erhhung/heroku-buildpack-exiftool.git"
     }
   ],
   "success_url": "/",
