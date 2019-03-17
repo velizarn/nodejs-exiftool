@@ -22,7 +22,8 @@ const envParams = [
   'HEROKU_TEST_RUN_BRANCH',
   'WEB_CONCURRENCY',
   'WEB_MEMORY',
-  'MEMORY_AVAILABLE'
+  'MEMORY_AVAILABLE',
+  'EXIFTOOL_PATH'
 ];
 
 logger.info(`npm_config_user_agent: ${process.env.npm_config_user_agent}`);
