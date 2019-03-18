@@ -11,15 +11,9 @@
     "exif"
   ],
   "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "heroku/ci-redis"
-    },
-    {
-      "url": "https://github.com/velizarn/heroku-buildpack-exiftool.git"
-    }
+    { "url": "heroku/nodejs" },
+    { "url": "heroku/ci-redis" },
+    { "url": "https://github.com/velizarn/heroku-buildpack-exiftool.git" }
   ],
   "success_url": "/",
   "formation": {
