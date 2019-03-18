@@ -87,6 +87,7 @@ function startWorker(workerId) {
             orderedData[key.toString()] = unordered[key.toString()];
           });
         
+          res.setHeader('Content-Type', 'application/json');
           res.send(`${JSON.stringify(orderedData, null, 2)}`);
         }
         if (err) {
