@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EXIF test</title>
+  <style>
+    body { font: 1.2em Verdana, sans-serif; }
+    p > img { display: none; }
+    .visible { display: block; }
+    pre { height: 400px; overflow-y: scroll; border: 1px solid grey; }
+  </style>
+</head>
+
+<body>
+  <p><button type="button" onclick="toggleImg()">Toggle image</button></p>
+  <p><img class="" src="<%= imgPathWeb %>" alt="test img" id="imgSrc" /></p>
+  <pre><%= exifData %></pre>
+  <script>
+    function toggleImg() {
+      var element = document.getElementById('imgSrc');
+      element.classList.toggle('visible');
+    }
+  </script>
+</body>
+</html>

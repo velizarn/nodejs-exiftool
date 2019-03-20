@@ -55,7 +55,7 @@ function startWorker(workerId) {
 
   const app = express();
 
-  app.set('views', path.join(__dirname, 'src/views'));
+  app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'ejs');
   
   app.use(express.static('public'));
@@ -69,8 +69,9 @@ function startWorker(workerId) {
     res.send(`${(new Date()).toLocaleString()} - ${req.header('host')}`);
   });
 
-  app.get('/test/exif', (req, res) => {
-    let imgPath = __dirname + '/../test/image.jpg';
+  app.get('/test/exif:ext(.json|.html)?', (req, res) => {
+    const ext = req.params.ext || '.json';
+    const imgPath = __dirname + '/../public/img/image.jpg';
     ep
       .open()
       .then(() => logger.info(`Started exiftool process ${workerId}`))
@@ -86,9 +87,19 @@ function startWorker(workerId) {
           Object.keys(unordered).sort().forEach(function(key) {
             orderedData[key.toString()] = unordered[key.toString()];
           });
-        
-          res.setHeader('Content-Type', 'application/json');
-          res.send(`${JSON.stringify(orderedData, null, 2)}`);
+
+          delete orderedData.Directory;
+          delete orderedData.SourceFile;
+          
+          if (ext === '.json') {
+            res.setHeader('Content-Type', 'application/json');
+            res.send(`${JSON.stringify(orderedData, null, 2)}`);
+          }
+          else {
+            const imgPathWeb = '/img/image.jpg';
+            const exifData = JSON.stringify(orderedData, null, 2);
+            res.render('test', { imgPathWeb, exifData });
+          }
         }
         if (err) {
           res.send(err);
