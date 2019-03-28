@@ -35,7 +35,7 @@
     "heroku-logger": "0.3.3",
     "http-auth": "3.2.3",
     "mocha": "6.0.2",
-    "sqreen": "1.29.4",
+    "sqreen": "1.29.5",
     "throng": "4.0.0"
   },
   "devDependencies": {
