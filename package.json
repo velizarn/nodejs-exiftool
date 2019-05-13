@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-security": "1.4.0",
     "nodemon": "1.19.0",
-    "prettier": "1.17.0",
+    "prettier": "1.17.1",
     "request": "2.88.0",
     "request-promise": "4.2.4",
     "tape": "4.10.1"
