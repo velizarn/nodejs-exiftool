@@ -30,7 +30,7 @@
     "eslint-plugin-json": "1.4.0",
     "node-exiftool": "2.3.0",
     "express": "4.17.1",
-    "express-validator": "5.3.1",
+    "express-validator": "6.0.0",
     "helmet": "3.18.0",
     "heroku-logger": "0.3.3",
     "http-auth": "3.2.3",
