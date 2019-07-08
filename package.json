@@ -16,7 +16,9 @@
     "lint": "eslint --ext .js,.json,.jsx . --fix",
     "start": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 src/index.js",
     "start:dev": "nodemon --optimize_for_size --max_old_space_size=920 --gc_interval=100 src/index.js",
-    "test": "cross-env NODE_ENV=test LOG_LEVEL=error mocha"
+    "test": "cross-env NODE_ENV=test LOG_LEVEL=error mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-eslint": "10.0.2",
@@ -36,7 +38,8 @@
     "http-auth": "3.2.3",
     "mocha": "6.1.4",
     "sqreen": "1.30.3",
-    "throng": "4.0.0"
+    "throng": "4.0.0",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "cross-env": "5.2.0",
@@ -65,5 +68,6 @@
       "test/*"
     ],
     "verbose": true
-  }
+  },
+  "snyk": true
 }
