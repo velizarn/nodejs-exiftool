@@ -51,7 +51,7 @@
     "prettier": "1.18.2",
     "request": "2.88.0",
     "request-promise": "4.2.4",
-    "tape": "4.10.2"
+    "tape": "4.11.0"
   },
   "keywords": [
     "node",
