@@ -16,7 +16,9 @@
     "lint": "eslint --ext .js,.json,.jsx . --fix",
     "start": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 src/index.js",
     "start:dev": "nodemon --optimize_for_size --max_old_space_size=920 --gc_interval=100 src/index.js",
-    "test": "cross-env NODE_ENV=test LOG_LEVEL=error mocha"
+    "test": "cross-env NODE_ENV=test LOG_LEVEL=error mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-eslint": "10.0.2",
@@ -30,13 +32,14 @@
     "eslint-plugin-json": "1.4.0",
     "node-exiftool": "2.3.0",
     "express": "4.17.1",
-    "express-validator": "6.0.1",
+    "express-validator": "6.1.1",
     "helmet": "3.18.0",
     "heroku-logger": "0.3.3",
     "http-auth": "3.2.3",
     "mocha": "6.1.4",
     "sqreen": "1.32.0",
-    "throng": "4.0.0"
+    "throng": "4.0.0",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "cross-env": "5.2.0",
@@ -48,7 +51,7 @@
     "prettier": "1.18.2",
     "request": "2.88.0",
     "request-promise": "4.2.4",
-    "tape": "4.10.2"
+    "tape": "4.11.0"
   },
   "keywords": [
     "node",
@@ -65,5 +68,6 @@
       "test/*"
     ],
     "verbose": true
-  }
+  },
+  "snyk": true
 }
