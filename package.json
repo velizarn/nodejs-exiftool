@@ -7,7 +7,7 @@
     "url": "https://velizarn.github.io/"
   },
   "engines": {
-    "node": "10.16.2"
+    "node": "10.16.3"
   },
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "chai-http": "4.3.0",
     "chai-json": "1.0.0",
     "cron": "1.7.1",
-    "dotenv": "8.0.0",
+    "dotenv": "8.1.0",
     "ejs": "2.6.2",
     "eslint-plugin-json": "1.4.0",
     "node-exiftool": "2.3.0",
@@ -39,11 +39,11 @@
     "mocha": "6.2.0",
     "sqreen": "1.32.0",
     "throng": "4.0.0",
-    "snyk": "1.216.5"
+    "snyk": "1.221.0"
   },
   "devDependencies": {
     "cross-env": "5.2.0",
-    "eslint": "6.1.0",
+    "eslint": "6.2.2",
     "eslint-config-prettier": "6.1.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-security": "1.4.0",
