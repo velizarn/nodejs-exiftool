@@ -16,7 +16,7 @@
     "lint": "eslint --ext .js,.json,.jsx . --fix",
     "start": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 src/index.js",
     "start:dev": "nodemon --optimize_for_size --max_old_space_size=920 --gc_interval=100 src/index.js",
-    "test": "cross-env NODE_ENV=test LOG_LEVEL=error mocha",
+    "test": "cross-env NODE_ENV=test LOG_LEVEL=error mocha --timeout 10000 --exit",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
