@@ -39,7 +39,7 @@
     "mocha": "6.2.0",
     "sqreen": "1.32.0",
     "throng": "4.0.0",
-    "snyk": "1.221.0"
+    "snyk": "1.222.1"
   },
   "devDependencies": {
     "cross-env": "5.2.0",
