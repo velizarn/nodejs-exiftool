@@ -3,4 +3,6 @@ version: v1.13.5
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
-  
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - sqreen > https-proxy-agent:
+        patched: '2019-10-04T12:34:45.588Z'
