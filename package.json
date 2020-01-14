@@ -37,7 +37,7 @@
     "heroku-logger": "0.3.3",
     "http-auth": "3.2.4",
     "mocha": "6.2.2",
-    "sqreen": "1.37.1",
+    "sqreen": "1.38.3",
     "throng": "4.0.0",
     "snyk": "^1.260.0"
   },
