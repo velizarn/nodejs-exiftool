@@ -34,7 +34,7 @@
     "http-auth": "3.2.4",
     "sqreen": "1.38.3",
     "throng": "4.0.0",
-    "snyk": "^1.260.0"
+    "snyk": "^1.518.0"
   },
   "devDependencies": {
     "babel-eslint": "10.0.3",
