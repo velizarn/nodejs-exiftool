@@ -32,9 +32,9 @@
     "helmet": "3.21.1",
     "heroku-logger": "0.3.3",
     "http-auth": "3.2.4",
-    "sqreen": "1.38.3",
+    "sqreen": "1.60.0",
     "throng": "4.0.0",
-    "snyk": "^1.260.0"
+    "snyk": "^1.685.0"
   },
   "devDependencies": {
     "babel-eslint": "10.0.3",
