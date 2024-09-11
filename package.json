@@ -22,7 +22,7 @@
     "update:dev": "rm -rf node_modules && rm -rf package-lock.json && npm cache clean --force && npm install && npm dedupe && npm audit fix"
   },
   "dependencies": {
-    "body-parser": "1.19.0",
+    "body-parser": "1.20.3",
     "cron": "1.8.1",
     "dotenv": "8.1.0",
     "ejs": "3.0.1",
