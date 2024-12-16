@@ -36,11 +36,6 @@
       "description": "",
       "value": "error",
       "required": false
-    },
-    "EXIFTOOL_PATH": {
-      "description": "",
-      "value": "https://exiftool.org/Image-ExifTool-13.08.tar.gz",
-      "required": false
     }
   },
   "environments": {
