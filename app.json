@@ -27,7 +27,14 @@
     "scheduler:standard"
   ],
   "stack": "heroku-24",
-  "env": {},
+  "env": {
+    "PORT": {
+      "value": "5000"
+    },
+    "LOG_LEVEL": {
+      "value": "error"
+    }
+  },
   "environments": {
     "test": {
       "formation": {
