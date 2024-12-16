@@ -24,7 +24,6 @@
     }
   },
   "addons": [
-    "heroku-redis:hobby-dev",
     "scheduler:standard"
   ],
   "stack": "heroku-18",
@@ -40,10 +39,7 @@
       "env": {},
       "scripts": {
         "test-setup": "npm run lint"
-      },
-      "addons":[
-        "heroku-redis:in-dyno"
-      ]
+      }
     }
   }
 }
