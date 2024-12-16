@@ -20,7 +20,7 @@
     "update:dev": "chmod a+x ./update_dev.sh && bash ./update_dev.sh"
   },
   "dependencies": {
-    "body-parser": "1.19.0",
+    "body-parser": "1.20.3",
     "cron": "1.8.1",
     "dotenv": "8.1.0",
     "ejs": "3.0.1",
