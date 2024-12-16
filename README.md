@@ -1,7 +1,5 @@
 # nodejs-exiftool
 
-[![Known Vulnerabilities](https://snyk.io/test/github/velizarn/nodejs-exiftool/badge.svg?targetFile=package.json)](https://snyk.io/test/github/velizarn/nodejs-exiftool?targetFile=package.json)
-
 Node.js integration for Phil Harvey's ExifTool, deployed to Heroku.
 
 ## Setup
