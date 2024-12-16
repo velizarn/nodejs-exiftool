@@ -26,7 +26,7 @@
   "addons": [
     "scheduler:standard"
   ],
-  "stack": "heroku-18",
+  "stack": "heroku-24",
   "env": {},
   "environments": {
     "test": {
