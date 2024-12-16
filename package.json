@@ -29,7 +29,7 @@
     "express-validator": "6.3.1",
     "helmet": "3.21.1",
     "heroku-logger": "0.3.3",
-    "http-auth": "3.2.4",
+    "http-auth": "4.2.0",
     "sqreen": "1.38.3",
     "throng": "4.0.0"
   },
