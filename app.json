@@ -28,10 +28,19 @@
   "stack": "heroku-24",
   "env": {
     "PORT": {
-      "value": "5000"
+      "description": "",
+      "value": "5000",
+      "required": false
     },
     "LOG_LEVEL": {
-      "value": "error"
+      "description": "",
+      "value": "error",
+      "required": false
+    },
+    "EXIFTOOL_PATH": {
+      "description": "",
+      "value": "https://exiftool.org/Image-ExifTool-13.08.tar.gz",
+      "required": false
     }
   },
   "environments": {
